@@ -1,0 +1,480 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* a {
+  text-decoration: none;
+  color: #7a995c;
+}
+
+body {
+  background-color: #e6e6e6;
+  font-family: "Merriweather", serif;
+}
+
+.flex {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  padding: 18px;
+  background-color: white;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.nav__links {
+  list-style: none;
+  font-size: 1.2rem;
+  gap: 2rem;
+}
+
+.nav__links a {
+  padding: 12px 6px;
+}
+
+.nav__links a:hover {
+  color: #a3cc7a;
+}
+
+.nav__button {
+  background-color: #e3ba0a;
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 16px;
+  transition: all ease 600ms;
+}
+
+.nav__button:hover {
+  background-color: #e6e6e6;
+  border-bottom-right-radius: 16px;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.icon {
+  display: none;
+  border: transparent;
+  background-color: transparent;
+}
+
+.hero {
+  margin: auto;
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  background-image: url(images/hero/masaje.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.cover__text {
+  font-size: 4rem;
+}
+
+.hero__description {
+  font-size: 1.8rem;
+  width: 60%;
+}
+
+.hero__button {
+  padding: 1rem 3rem;
+  border-radius: 20px;
+
+  background-color: white;
+  transition: all ease 600ms;
+}
+
+.hero__button:hover {
+  background-color: beige;
+  border-radius: 90px;
+}
+
+article {
+  margin: auto;
+  max-width: 80%;
+  padding: 3rem 0;
+}
+
+article p {
+  max-width: 70%;
+  font-weight: 200;
+}
+
+.top__article {
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  line-height: 2.5rem;
+}
+
+.top__article > h2 {
+  font-size: 2rem;
+}
+
+.services {
+  gap: 2rem;
+}
+
+.card {
+  width: 400px;
+  margin: auto;
+  height: 60vh;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.minicards {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.minicard {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.minicard > p {
+  width: 40%;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.services__button {
+  background-color: white;
+  padding: 1.5rem 2rem;
+}
+
+.nutricion {
+  background-image: url(images/articles/nutricionista.jpg);
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40vh;
+  background-size: cover;
+  font-size: 1.5rem;
+  background-position: center;
+}
+
+.nutricion h2 {
+  font-size: 3rem;
+}
+
+.nutricion > p {
+  color: rgb(36, 30, 30);
+}
+
+.corporativo {
+  align-items: end;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 3rem 6rem;
+}
+
+.corporativo h2 {
+  font-size: 1.5rem;
+}
+
+.corporativo span {
+  opacity: 60%;
+}
+
+.button__corporativo {
+  text-align: center;
+  width: 150px;
+  padding: 24px 0;
+  background-color: #a3cc7a;
+  color: black;
+}
+
+/* COPORATIVO */
+
+.hero__corporativo {
+  background-position: center;
+  height: 30vh;
+  padding: 3rem;
+  background-image: url(images/articles/oficinas.jpg);
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}
+
+.hero__corporativo h1 {
+  font-size: 2rem;
+}
+
+.hero__corporativo h4 {
+  font-size: 1.5rem;
+}
+
+.top__corporativo {
+  padding: 4rem;
+  line-height: 2rem;
+}
+
+.top__corporativo ul {
+  list-style: circle;
+}
+
+.corporativo__description {
+  line-height: 2rem;
+  padding: 4rem;
+  background-color: #a3cc7a;
+  border-top-right-radius: 100%;
+}
+
+.corporativo__cards {
+  justify-content: center;
+  padding: 2rem;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card__corporativo {
+  background-color: white;
+  width: 30%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 8px 8px rgb(180, 178, 178);
+}
+
+.corporativo__footer {
+  width: 80%;
+  height: 30vh;
+  margin: auto;
+  background-image: url(images/articles/dinero__salud.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
+  justify-content: center;
+  align-items: center;
+  opacity: 60%;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* ABOUT SECTION */
+
+.about__top {
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  gap: 18px;
+  padding: 2rem;
+  background-color: white;
+}
+
+.about__top .para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  width: 60%;
+  height: 60vh;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.mision {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(163, 204, 122, .5) 100%
+  );
+}
+
+.vision {
+  background: rgb(227, 186, 10);
+  background: linear-gradient(
+    90deg,
+    rgba(227, 186, 10, .5) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.main__agendar {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+iframe {
+  width: 80%;
+}
+
+.contacto {
+  width: 80%;
+  height: 70vh;
+  background-image: url(images/articles/booking.jpg);
+  background-size: cover;
+  justify-content: end;
+  background-position:center;
+}
+
+.datos__contacto {
+  background-color: white;
+  width: 35%;
+  height: 70vh;
+  padding: 4rem;
+  flex-direction: column;
+  color: #686363  ;
+  justify-content: center;
+  gap: 4rem ;
+}
+
+.datos__contacto i{
+  font-size: 1.3rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .icon {
+    display: block;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav__links {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 2rem;
+    background-color: white;
+    align-items: end;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .__visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .cover__text {
+    font-size: 2rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  article {
+    max-width: 100%;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: auto;
+    width: 80%;
+    height: 45vh;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .minicards {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .minicard {
+    gap: 1rem;
+  }
+
+  .corporativo {
+    padding: 3rem 2rem;
+  }
+
+  .hero__corporativo {
+    height: 25vh;
+  }
+
+  .corporativo__cards {
+    flex-direction: column;
+  }
+
+  .card__corporativo {
+    width: 100%;
+  }
+
+  .about__top .para {
+    width: 100%;
+    font-size: small;
+  }
+
+  .main__agendar {
+    padding: 4rem 0;
+  }
+  
+  .contacto {
+    margin: auto;
+    width: 100%;
+    height: 70vh;
+    background-image: url(images/articles/booking.jpg);
+    background-size: cover;
+    justify-content: end;
+    background-position:center;
+  }
+  
+  .datos__contacto {
+    background-color: white;
+    width: 50%;
+    height: 70vh;
+    padding: 1rem;
+    flex-direction: column;
+    color: #686363  ;
+    justify-content: center;
+    gap: 2rem ;
+    text-align: center;
+  }
+  
+  .datos__contacto i{
+    font-size: small;
+  }
+
+  iframe {
+    width: 100%;
+    height: 30vh;
+  }
+  
+
+}

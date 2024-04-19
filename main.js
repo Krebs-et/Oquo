@@ -1,12 +1,29 @@
-const navLinks = document.querySelector(".nav__links");
-const openNav = document.querySelector("#open");
-const closeNav = document.querySelector("#close");
+const navToggle = document.querySelector('.nav_toggle');
+const navMenu = document.querySelector('.nav_menu');
 
-openNav.addEventListener('click', () => {
-    navLinks.classList.add('__visible')
+
+
+
+navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle("nav_menu_visible");
 })
 
-closeNav.addEventListener('click', () => {
-    navLinks.classList.remove('__visible')
-})
+const COLOR_DEFAULT = '#f7f6f6'
+const VISIBILITY_DEFAULT = 'none'
+
+function changeColor (elemento, color, tarjeta, visibilidad) {
+    changeTodosColor();
+    elemento.style.backgroundColor = color;
+    tarjeta.style.display = visibilidad;
+}
+
+function changeTodosColor(){
+    document.querySelectorAll('.catalog_menu > li').forEach(e => {
+        e.style.backgroundColor = COLOR_DEFAULT;
+    });
+    document.querySelectorAll('.area_wellness_cards > div').forEach(i => {
+        i.style.display = VISIBILITY_DEFAULT;
+    });
+}
+
 

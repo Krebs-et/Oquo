@@ -4,11 +4,11 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Oquo - Wellness Center</title>
+        <title>Oquo - Área Wellness</title>
 
         <!--    CSS PERSONALIZADO   -->
 
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../../styles.css">
 
         <!--    FUENTES DE GOOGLE   -->
 
@@ -24,7 +24,7 @@
 
         <!--   SCRIPT  -->
 
-        <script src="main.js" defer></script>
+        <script src="../../main.js" defer></script>
 
 
 </head>
@@ -42,7 +42,7 @@
 
         <header>
                 <nav class="flex">
-                        <img src="images/oquo.jpg" alt="Oquo" width="300px">
+                        <img src="../../images/oquo.jpg" alt="Oquo" width="300px">
                         <button class="nav_toggle"><span class="material-symbols-outlined">
                                         menu
                                 </span></button>
@@ -171,69 +171,77 @@
         </header>
 
         <main>
-
-                <section class="slider content">
-                        <ul>
-                                <li><img src="images/slider/beneficio.jpg" alt=""></li>
-                                <li><img src="images/slider/booking.jpg" alt=""></li>
-                                <li><img src="images/slider/nutricionista.jpg" alt=""></li>
-                        </ul>
-                </section>
-
-                <section class="index_cuerpo content">
-                        <h1>¡Tu mejor momento es ahora!</h1>
-
-                        <p>Combinamos terapias de tecnología avanzada de experiencia profesional en un conjunto de
-                                tratamientos innovadores orientados a fortalecer tu juventud y salud integral.
-                                Nos enfocamos en mejorar la calidad de vida de nuestros usuarios, encuentra una
-                                combinación de experiencias y emociones para una sensación de bienestar pleno.
-                        </p>
-                </section>
-
-                <section class="index_servicios content flex">
-                        <div class="services_card flex">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                stress_management
-                                        </span><br> ÁREA WELLNESS</h2>
-                                <p>Ofrecemos servicios integrativos de bienestar y tratamientos innovadores llenos de
-                                        experiencias y emociones para una sensación plena. ¡Consiente a tu cuerpo y vive
-                                        un bienestar pleno!
-                                </p>
+                <div class="wellness_area_hero content">
+                        <h1 class="area_wellness_title">ÁREA WELLNESS</h1>
+                        <p>Ofrecemos servicios integrativos de bienestar y tratamien tos innovadores llenos de
+                                experiencias y emociones para una sensación plena. ¡Consiente a tu cuerpo y vive un
+                                bienestar pleno!</p>
+                        <p>Conoce nuestros diferentes tipos de terapias: Masoterapia, Hidroterapia y Balneoterapia.</p>
+                                
+                </div>
+                <div class="area_wellness_container flex">
+                        <div class="catalog">
+                                <ul class="catalog_menu">
+                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2', '#amatista', 'block')">Terapia
+                                                Amatista <br> (Terapia Relajante)</li>
+                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2', 'amazonita', 'block')">Terapia
+                                                Amazonita <br> (Terapia vigorizante)
+                                        </li>
+                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia
+                                                Malaquita <br> (Terapia antiestrés)
+                                        </li>
+                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia Flourita
+                                                <br> (Terapia reanimante)
+                                        </li>
+                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia Jaspe
+                                                <br> (Reflexología podal)</li>
+                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia
+                                                Tourquoise <br> (Drenaje linfático)
+                                        </li>
+                                </ul>
                         </div>
-                        <div class="services_card flex">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                volunteer_activism
-                                        </span><br>TURISMO DE SALUD</h2>
-                                <p>Tratamientos de medicina estética con tecnología de vanguardia que resaltan y
-                                        renuevan la belleza de nuestros pacientes. Contamos con vigilancia
-                                        médica y asistencia profesional las 24 horas.</p>
+
+                        <div class="area_wellness_cards flex">
+                                <div id="amatista" class="area_wellness_card flex">
+                                        <h2 class="area_wellness_title">Terapia
+                                                Amatista <br> (Terapia Relajante)</h2>
+                                        <p class="area_wellness_card_paraph">(Encuentra tu balance y armonía) Armonizamos técnicas de masoterapia en base a formulaciones especializadas con aceites esenciales puros, lograrás un estado de bienestar, mejorando la calidad del sueño, el estado de ánimo y te permitirá reducir la ansiedad a la vez que hidratas y nutres tu piel.</p>
+                                <span class="boton_reserva_small">RESERVAR</span>
+
+                                </div>
+                                <div id="amazonita" class="area_wellness_card">
+                                        <h2 class="area_wellness_title">Terapia Amazonita <br> (Terapia vigorizante)</h2>
+                                        <p class="area_wellness_card_paraph">(Trabaja tu energía positiva) Terapia para recuperar tu fuerza física, con acción vigorizante que renueva la energía física y mental, con la ayuda de fórmulas de aceites esenciales como el tomillo, enebro, limón o romero.</p>
+                                </div>
+                                <div id="malaquita" class="area_wellness_card">
+                                        <h2 class="area_wellness_title"></h2>
+                                        <p class="area_wellness_card_paraph">(Logra una conexión positiva y armonía espiritual)
+                                                Terapia renovadora que permite la relajación muscular, estimula tus sentidos y tu equilibrio emocional, libera las tensiones acumuladas con el objetivo de descargar el estrés, la ansiedad y tus emociones, combinando fórmulas esenciales de lavanda, limón, salvia, sándalo y manzanilla.    </p>
+                                </div>
+                                <div class="area_wellness_card">
+                                        <h2 class="area_wellness_title"></h2>
+                                        <p class="area_wellness_card_paraph"></p>
+                                </div>
+                                <div class="area_wellness_card">
+                                        <h2 class="area_wellness_title"></h2>
+                                        <p class="area_wellness_card_paraph"></p>
+                                </div>
+                                <div class="area_wellness_card">
+                                        <h2 class="area_wellness_title"></h2>
+                                        <p class="area_wellness_card_paraph"></p>
+                                </div>
                         </div>
-                        <div class="services_card flex">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                bed
-                                        </span><br>HOSPEDAJE WELLNESS</h2>
-                                <p>¡Escápate con nosotros! Convierte tu estancia en una experiencia única y
-                                        revitalizante, encuentra un refugio de tranquilidad y bienestar.</p>
-                        </div>
-                        <div class="services_card flex">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                heart_plus
-                                        </span><br>SALUD INTEGRAL</h2>
-                                <P>Porque la salud se proyecta, realízate una valoración integral para un equilibrio en
-                                        salud física, mental y emocional.</P>
-                        </div>
-                </section>
+                </div>
 
                 <section class="call_to_action flex">
 
-                        <a href=""><img src="assets/fb.svg" alt=""></a>
-                        <a href=""><img src="assets/tiktok.svg" alt=""></a>
-                        <a href=""><img src="assets/wa.svg" alt=""></a>
-                        <a href=""><img src="assets/ig.svg" alt=""></a>
+                        <a href=""><img src="../../assets/fb.svg" alt=""></a>
+                        <a href=""><img src="../../assets/tiktok.svg" alt=""></a>
+                        <a href=""><img src="../../assets/wa.svg" alt=""></a>
+                        <a href=""><img src="../../assets/ig.svg" alt=""></a>
 
 
                 </section>
-
         </main>
 
 
@@ -268,8 +276,6 @@
                         </ul>
                 </div>
         </footer>
-
-
 </body>
 
 </html>

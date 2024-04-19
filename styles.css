@@ -2,478 +2,630 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  font-family: "Merriweather";
 }
 
-* a {
-  text-decoration: none;
-  color: #7a995c;
-}
-
-body {
-  background-color: #e6e6e6;
-  font-family: "Merriweather", serif;
-}
+/* PROPIEDADES GENERALES */
 
 .flex {
   display: flex;
 }
 
-nav {
-  justify-content: space-around;
-  align-items: center;
-  padding: 18px;
-  background-color: white;
-  font-family: "Space Grotesk", sans-serif;
-}
-
-.nav__links {
+.unstyled_list {
   list-style: none;
-  font-size: 1.2rem;
-  gap: 2rem;
 }
 
-.nav__links a {
-  padding: 12px 6px;
-}
-
-.nav__links a:hover {
-  color: #a3cc7a;
-}
-
-.nav__button {
-  background-color: #e3ba0a;
-  border-bottom-left-radius: 16px;
-  border-top-right-radius: 16px;
-  transition: all ease 600ms;
-}
-
-.nav__button:hover {
-  background-color: #e6e6e6;
-  border-bottom-right-radius: 16px;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.icon {
-  display: none;
-  border: transparent;
-  background-color: transparent;
-}
-
-.hero {
+.content {
+  max-width: 992px;
   margin: auto;
+}
+/* PROPIEDADES GENERALES */
+
+.top_bar_link {
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  padding: 8px 32px;
+  gap: 10px;
+}
+
+.top_bar {
+  top: 0;
+  justify-content: end;
+  background-color: rgb(114, 136, 120);
+  position: fixed;
   width: 100%;
-  height: 80vh;
+  z-index: 10;
+}
+
+header {
+  background-color: #f7f6f6;
+  position: fixed;
+  width: 100%;
+  top: 40px;
+  z-index: 10;
+}
+
+nav {
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav_item {
+  margin: 0px 18px;
+  color: #121212;
+  font-weight: bold;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav_link:visited {
+  text-decoration: none;
+  color: #121212;
+}
+
+.nav_toggle {
+  color: #121212;
+  background: none;
+  border: none;
+  padding-top: 10px;
+
+  display: none;
+}
+
+.sub_menu {
+  position: fixed;
+  background-color: #c0c7c2;
+  display: none;
+}
+
+.sub_nav_link {
+  text-decoration: none;
+  line-height: 50px;
+  padding: 18px;
+  color: rgb(114, 136, 120);
+}
+
+.sub_nav_item:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+nav li:hover > .sub_menu {
+  display: block;
+  z-index: 10;
+}
+
+.acordeon {
+  display: none;
+}
+
+main {
+  margin: 220px 0 30px 0;
+  height: 100%;
+}
+
+.slider {
+  height: 400px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  width: 300%;
+  animation: slide 20s infinite ease-in-out;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+.slider img {
+  width: 100%;
   object-fit: cover;
-  background-image: url(images/hero/masaje.jpg);
-  background-position: center;
-  background-size: cover;
+}
+
+.index_cuerpo {
+  text-align: center;
+  max-width: 992px;
+  margin: 60px auto;
+}
+
+.index_cuerpo h1 {
+  margin: 20px 0;
+}
+
+.index_servicios {
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+}
+
+.services_card {
   flex-direction: column;
-  color: rgb(255, 255, 255);
-  gap: 1.5rem;
+  justify-content: center;
+  margin: 10px;
+  max-width: 220px;
   text-align: center;
+  padding: 10px 20px;
+  border: outset 3px #c0c7c2;
 }
 
-.cover__text {
-  font-size: 4rem;
+.services_card p {
+  padding: 10px 0;
 }
 
-.hero__description {
-  font-size: 1.8rem;
-  width: 60%;
+.material-symbols-outlined.card_logo {
+  font-size: 60px;
 }
 
-.hero__button {
-  padding: 1rem 3rem;
-  border-radius: 20px;
-
-  background-color: white;
-  transition: all ease 600ms;
+footer {
+  background-color: rgb(114, 136, 120);
+  height: 150px;
+  justify-content: center;
+  width: 100%;
 }
 
-.hero__button:hover {
-  background-color: beige;
-  border-radius: 90px;
-}
-
-article {
-  margin: auto;
-  max-width: 80%;
-  padding: 3rem 0;
-}
-
-article p {
-  max-width: 70%;
-  font-weight: 200;
-}
-
-.top__article {
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 2rem;
-  line-height: 2.5rem;
-}
-
-.top__article > h2 {
-  font-size: 2rem;
-}
-
-.services {
-  gap: 2rem;
-}
-
-.card {
-  width: 400px;
-  margin: auto;
-  height: 60vh;
-  background-size: cover;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.minicards {
+.footer_content {
   justify-content: space-around;
   align-items: center;
+  max-width: 992px;
+  gap: 100px;
 }
 
-.minicard {
-  flex: 1;
+.footer_item {
+  color: white;
+}
+
+.footer_link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 50px;
+  align-items: center;
+}
+
+.call_to_action {
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 60px;
+  margin: 50px;
 }
 
-.minicard > p {
-  width: 40%;
-  text-align: center;
-  line-height: 1.5rem;
-}
-
-.services__button {
-  background-color: white;
-  padding: 1.5rem 2rem;
-}
-
-.nutricion {
-  background-image: url(images/articles/nutricionista.jpg);
-  gap: 2rem;
-  flex-direction: column;
+.nosotros_hero {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 40vh;
-  background-size: cover;
-  font-size: 1.5rem;
-  background-position: center;
-}
-
-.nutricion h2 {
-  font-size: 3rem;
-}
-
-.nutricion > p {
-  color: rgb(36, 30, 30);
-}
-
-.corporativo {
-  align-items: end;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 3rem 6rem;
-}
-
-.corporativo h2 {
-  font-size: 1.5rem;
-}
-
-.corporativo span {
-  opacity: 60%;
-}
-
-.button__corporativo {
-  text-align: center;
-  width: 150px;
-  padding: 24px 0;
-  background-color: #a3cc7a;
-  color: black;
-}
-
-/* COPORATIVO */
-
-.hero__corporativo {
-  background-position: center;
-  height: 30vh;
-  padding: 3rem;
-  background-image: url(images/articles/oficinas.jpg);
-  background-size: cover;
-  color: rgb(255, 255, 255);
-}
-
-.hero__corporativo h1 {
-  font-size: 2rem;
-}
-
-.hero__corporativo h4 {
-  font-size: 1.5rem;
-}
-
-.top__corporativo {
-  padding: 4rem;
-  line-height: 2rem;
-}
-
-.top__corporativo ul {
-  list-style: circle;
-}
-
-.corporativo__description {
-  line-height: 2rem;
-  padding: 4rem;
-  background-color: #a3cc7a;
-  border-top-right-radius: 100%;
-}
-
-.corporativo__cards {
-  justify-content: center;
-  padding: 2rem;
-  gap: 16px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
-.card__corporativo {
-  background-color: white;
-  width: 30%;
-  height: 30vh;
+.nosotros_card {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 2rem;
+  flex-direction: column;
   text-align: center;
-  box-shadow: 8px 8px rgb(180, 178, 178);
+  max-width: 300px;
+  height: 300px;
+  border: inset 4px #c0c7c2;
+  padding: 40px;
+  border-radius: 100%;
 }
 
-.corporativo__footer {
-  width: 80%;
-  height: 30vh;
-  margin: auto;
-  background-image: url(images/articles/dinero__salud.jpg);
-  background-size: cover;
-  background-position: 50% 80%;
-  justify-content: center;
-  align-items: center;
-  opacity: 60%;
-  text-align: center;
-  padding: 2rem;
+.nosotros_card h2 {
+  margin: 10px 0;
 }
 
-/* ABOUT SECTION */
-
-.about__top {
-  background-size: cover;
+.nosotros_item {
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  justify-content: end;
-  gap: 18px;
-  padding: 2rem;
-  background-color: white;
-}
-
-.about__top .para {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-color: white;
-  width: 60%;
-  height: 60vh;
-  font-size: 1.5rem;
-  padding: 1rem;
+  margin: 30px 0;
 }
 
-.mision {
+.valores {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.lista_valores {
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: #c0c7c2;
+  padding: 30px;
+}
+
+.lista_valores li {
+  margin: 0 30px;
+}
+
+.nosotros_content {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.card_link {
+  text-decoration: none;
+  color: #121212;
+  
+}
+
+.card_link:hover {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(163, 204, 122, .5) 100%
+    rgba(192, 199, 194, 1) 100%
   );
 }
 
-.vision {
-  background: rgb(227, 186, 10);
-  background: linear-gradient(
-    90deg,
-    rgba(227, 186, 10, .5) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
+.card_link:visited {
+  color: #121212;
 }
 
-.main__agendar {
+.paquete {
+  padding: 20px 0;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.paquete_content {
+  flex-basis: 70%;
+  border-left: #c0c7c2 solid 20px;
+  padding-left: 30px;
+  min-height: 200px;
+}
+
+.paquete_title {
+  margin-top: 10%;
+  flex-basis: 165px;
+}
+
+.paquete_lista {
+  line-height: 40px;
+  margin-left: 50px;
+}
+
+.area_wellness_container {
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+.area_wellness_cards {
   flex-direction: column;
+  width: 700px;
+  max-height: 480px;
+  overflow: hidden;
+}
+
+.area_wellness_card {
+  flex-direction: column;
+  justify-content: center;
+  height: 480px;
+  border: #c0c7c2 2px outset;
+  padding: 80px;
+  gap: 30px;
+}
+
+.area_wellness_title {
+  margin: 18px 0;
+}
+
+.catalog_menu {
+  list-style: none;
+  flex-direction: column;
+  text-align: center;
+}
+
+.catalog_menu > li {
+  padding: 20px 10px;
+  cursor: pointer;
+  background-color: #f7f6f6;
+  border-bottom: 1px solid #c0c7c2;
+  transition: background-color 1s;
+}
+
+
+
+/* .catalog {
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .standby {
+  padding: 50px;
+  background-color: #c0c7c2;
+  cursor: pointer;
+}
+
+.standby:hover {
+  background-color:#f7f6f6;
+} */
+
+.boton_reserva {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #c0c7c2;
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in; 
+  
+
+}
+
+.boton_reserva:hover {
+  background-color:aliceblue;
+  color: #121212;
+}
+
+.boton_reserva_small {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 18px auto;
+  text-align: center;
+  padding: 8px;
+  background-color: #c0c7c2;
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in; 
+  
+}
+
+.boton_reserva_small:hover {
+  background-color:aliceblue;
+  color: #121212;
+}
+
+.cards_large {
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-iframe {
-  width: 80%;
-}
-
-.contacto {
-  width: 80%;
-  height: 70vh;
-  background-image: url(images/articles/booking.jpg);
-  background-size: cover;
-  justify-content: end;
-  background-position:center;
-}
-
-.datos__contacto {
-  background-color: white;
-  width: 35%;
-  height: 70vh;
-  padding: 4rem;
+  margin: 30px auto;
   flex-direction: column;
-  color: #686363  ;
+  padding: 30px;
+}
+
+.large_card {
+  padding: 30px;
+  border: outset 2px #c0c7c2;
+  margin: 8px;
+}
+.large_card h3 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.large_card ul {
+  margin-top: 20px;
+  margin-left: 40px;
+  line-height: 30px;
+}
+
+
+.paquetes_cards {
+  align-items: center;
   justify-content: center;
-  gap: 4rem ;
+  text-align: center;
+  padding: 0px 0;
+  gap: 8px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
 }
 
-.datos__contacto i{
-  font-size: 1.3rem;
+.paquetes_cards>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+  border: #c0c7c2 outset 2px;
+  height: 350px;
+  padding: 20px;
 }
 
+.paquetes_cards p{
+  text-align: center;
+  margin: 8px auto;
+  max-width: 200px;
+}
 
-@media screen and (max-width: 1000px) {
-  .icon {
+.wellness_area_hero{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.wellness_area_hero_title {
+  margin: 20px 0;
+}
+
+.wellness_area_hero_paraph {
+  margin: 30px 0;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav_toggle {
     display: block;
   }
 
-  nav {
-    justify-content: space-between;
-  }
-
-  .nav__links {
-    position: absolute;
-    flex-direction: column;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 2rem;
-    background-color: white;
-    align-items: end;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .hero {
-    height: 50vh;
-  }
-
-  .__visible {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .cover__text {
-    font-size: 2rem;
-  }
-
-  .hero__description {
-    font-size: 1rem;
-    width: 90%;
-  }
-
-  article {
-    max-width: 100%;
-  }
-
-  .services {
-    flex-direction: column;
-  }
-
-  .card {
-    margin: auto;
-    width: 80%;
-    height: 45vh;
-    background-size: cover;
+  .top_bar {
     flex-direction: column;
     align-items: center;
+  }
+
+  .top_bar_link {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  header {
+    height: 140px;
+    align-items: center;
+    top: 68px;
+  }
+
+  nav {
+    height: 140px;
     justify-content: space-around;
   }
 
-  .minicards {
+  nav img {
+    width: 200px;
+  }
+
+  .nav_menu {
+    text-align: center;
+    background-color: rgb(124, 132, 116);
+    position: fixed;
+    left: 0;
+    top: 208px;
     flex-direction: column;
-    gap: 2rem;
-  }
-
-  .minicard {
-    gap: 1rem;
-  }
-
-  .corporativo {
-    padding: 3rem 2rem;
-  }
-
-  .hero__corporativo {
-    height: 25vh;
-  }
-
-  .corporativo__cards {
-    flex-direction: column;
-  }
-
-  .card__corporativo {
+    align-items: center;
     width: 100%;
+    line-height: 50px;
+    padding: 10px 0;
+
+    height: calc(100% - 208px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+
+    z-index: 10;
   }
 
-  .about__top .para {
-    width: 100%;
-    font-size: small;
+  .nav_menu_visible {
+    left: 0;
   }
 
-  .main__agendar {
-    padding: 4rem 0;
+  .nav_item {
+    margin: 0;
   }
-  
-  .contacto {
-    margin: auto;
-    width: 100%;
-    height: 70vh;
-    background-image: url(images/articles/booking.jpg);
-    background-size: cover;
-    justify-content: end;
-    background-position:center;
+
+  .sub_menu {
+    position: relative;
   }
-  
-  .datos__contacto {
-    background-color: white;
-    width: 50%;
-    height: 70vh;
-    padding: 1rem;
-    flex-direction: column;
-    color: #686363  ;
-    justify-content: center;
-    gap: 2rem ;
+
+  .desktop {
+    display: none;
+  }
+
+  .acordeon {
+    display: block;
+  }
+
+  .drop_span {
+    display: flex;
+    align-items: center;
+  }
+
+  .slider {
+    margin: 30px 0;
+    height: auto;
+  }
+
+  footer {
     text-align: center;
   }
-  
-  .datos__contacto i{
-    font-size: small;
+
+  .footer_item {
+    color: white;
   }
 
-  iframe {
-    width: 100%;
-    height: 30vh;
+  .footer_link {
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 30px;
+    align-items: center;
+  }
+
+  .sub_menu {
+    background-color: transparent;
+    list-style: circle;
+    text-align: left;
+  }
+
+  .sub_nav_link {
+    color: white;
+    padding: 0;
+  }
+
+  .sub_nav_item:hover {
+    background-color: transparent;
+  }
+
+  .index_cuerpo {
+    padding: 0 30px;
+  }
+
+  .services_card {
+    max-width: 300px;
+  }
+
+  .nosotros_item {
+    overflow-x: scroll;
+  }
+
+  .paquete {
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 10px;
+    flex-basis: 0px;
+  }
+
+  .paquete_title{
+    margin: 0;
+    padding: 10px;
+    flex-basis: 0px;
+
+  }
+
+  .paquete_content{
+    margin: 10px;
+  }
+
+  .call_to_action {
+    gap: 40px;
   }
   
 

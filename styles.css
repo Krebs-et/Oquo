@@ -318,13 +318,16 @@ footer {
   gap: 30px;
 }
 
+.area_wellness_card_paraph {
+  padding: 10px;
+}
+
 .area_wellness_title {
   margin: 18px 0;
 }
 
 .catalog_menu {
   list-style: none;
-  flex-direction: column;
   text-align: center;
 }
 
@@ -627,6 +630,13 @@ footer {
   .call_to_action {
     gap: 40px;
   }
+
+  .area_wellness_card{
+    padding: 40px;
+  }
   
+  .catalog_menu {
+    flex-direction: row;
+  }
 
 }

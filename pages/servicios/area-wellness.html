@@ -55,7 +55,7 @@
                                                 class="nav_link">SERVICIOS</a>
                                         <ul class="unstyled_list sub_menu">
                                                 <li class="sub_nav_item"><a class="sub_nav_link"
-                                                                href="https://oquowellnesscenter.com/pages/servicios/wellness.html">Area
+                                                                href="https://oquowellnesscenter.com/pages/servicios/area-wellness.html">Area
                                                                 Wellness</a>
                                                 </li>
                                                 <li class="sub_nav_item"><a class="sub_nav_link"
@@ -82,7 +82,7 @@
 
                                         <ul class="unstyled_list sub_menu">
                                                 <li class="sub_nav_item"><a class="sub_nav_link"
-                                                                href="https://oquowellnesscenter.com/pages/servicios/wellness.html">Area
+                                                                href="https://oquowellnesscenter.com/pages/servicios/area-wellness.html">Area
                                                                 Wellness</a>
                                                 </li>
                                                 <li class="sub_nav_item"><a class="sub_nav_link"
@@ -177,26 +177,40 @@
                                 experiencias y emociones para una sensación plena. ¡Consiente a tu cuerpo y vive un
                                 bienestar pleno!</p>
                         <p>Conoce nuestros diferentes tipos de terapias: Masoterapia, Hidroterapia y Balneoterapia.</p>
-                                
+
                 </div>
                 <div class="area_wellness_container flex">
                         <div class="catalog">
                                 <ul class="catalog_menu">
-                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2', '#amatista', 'block')">Terapia
-                                                Amatista <br> (Terapia Relajante)</li>
-                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2', 'amazonita', 'block')">Terapia
-                                                Amazonita <br> (Terapia vigorizante)
+                                        <li class="catalog_item"
+                                                onclick="changeColor(this, '#c0c7c2', getElementById('amatista'), 'block')">
+                                                <b>Terapia
+                                                        Amatista</b> <br> (Terapia Relajante)
                                         </li>
-                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia
-                                                Malaquita <br> (Terapia antiestrés)
+                                        <li class="catalog_item"
+                                                onclick="changeColor(this, '#c0c7c2', getElementById('amazonita'), 'block')">
+                                                <b>Terapia
+                                                        Amazonita</b> <br> (Terapia vigorizante)
                                         </li>
-                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia Flourita
+                                        <li class="catalog_item"
+                                                onclick="changeColor(this, '#c0c7c2', getElementById('malaquita'), 'block')">
+                                                <b>Terapia
+                                                        Malaquita</b> <br> (Terapia antiestrés)
+                                        </li>
+                                        <li class="catalog_item"
+                                                onclick="changeColor(this, '#c0c7c2', getElementById('fluorita'), 'block')">
+                                                <b>Terapia Flourita</b>
                                                 <br> (Terapia reanimante)
                                         </li>
-                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia Jaspe
-                                                <br> (Reflexología podal)</li>
-                                        <li class="catalog_item" onclick="changeColor(this, '#c0c7c2')">Terapia
-                                                Tourquoise <br> (Drenaje linfático)
+                                        <li class="catalog_item"
+                                                onclick="changeColor(this, '#c0c7c2', getElementById('jaspe'), 'block')">
+                                                <b>Terapia Jaspe</b>
+                                                <br> (Reflexología podal)
+                                        </li>
+                                        <li class="catalog_item"
+                                                onclick="changeColor(this, '#c0c7c2', getElementById('turqouise'), 'block')">
+                                                <b>Terapia
+                                                        Tourquoise</b> <br> (Drenaje Linfático)
                                         </li>
                                 </ul>
                         </div>
@@ -205,30 +219,64 @@
                                 <div id="amatista" class="area_wellness_card flex">
                                         <h2 class="area_wellness_title">Terapia
                                                 Amatista <br> (Terapia Relajante)</h2>
-                                        <p class="area_wellness_card_paraph">(Encuentra tu balance y armonía) Armonizamos técnicas de masoterapia en base a formulaciones especializadas con aceites esenciales puros, lograrás un estado de bienestar, mejorando la calidad del sueño, el estado de ánimo y te permitirá reducir la ansiedad a la vez que hidratas y nutres tu piel.</p>
-                                <span class="boton_reserva_small">RESERVAR</span>
+                                        <p class="area_wellness_card_paraph">(Encuentra tu balance y armonía)
+                                                Armonizamos técnicas de masoterapia en base a formulaciones
+                                                especializadas con aceites esenciales puros, lograrás un estado de
+                                                bienestar, mejorando la calidad del sueño, el estado de ánimo y te
+                                                permitirá reducir la ansiedad a la vez que hidratas y nutres tu piel.
+                                        </p>
+                                        <span class="boton_reserva_small">RESERVAR</span>
 
                                 </div>
                                 <div id="amazonita" class="area_wellness_card">
-                                        <h2 class="area_wellness_title">Terapia Amazonita <br> (Terapia vigorizante)</h2>
-                                        <p class="area_wellness_card_paraph">(Trabaja tu energía positiva) Terapia para recuperar tu fuerza física, con acción vigorizante que renueva la energía física y mental, con la ayuda de fórmulas de aceites esenciales como el tomillo, enebro, limón o romero.</p>
+                                        <h2 class="area_wellness_title">Terapia Amazonita <br> (Terapia Vigorizante)
+                                        </h2>
+                                        <p class="area_wellness_card_paraph">(Trabaja tu energía positiva) Terapia para
+                                                recuperar tu fuerza física, con acción vigorizante que renueva la
+                                                energía física y mental, con la ayuda de fórmulas de aceites esenciales
+                                                como el tomillo, enebro, limón o romero.</p>
+                                        <span class="boton_reserva_small">RESERVAR</span>
+
                                 </div>
                                 <div id="malaquita" class="area_wellness_card">
-                                        <h2 class="area_wellness_title"></h2>
-                                        <p class="area_wellness_card_paraph">(Logra una conexión positiva y armonía espiritual)
-                                                Terapia renovadora que permite la relajación muscular, estimula tus sentidos y tu equilibrio emocional, libera las tensiones acumuladas con el objetivo de descargar el estrés, la ansiedad y tus emociones, combinando fórmulas esenciales de lavanda, limón, salvia, sándalo y manzanilla.    </p>
+                                        <h2 class="area_wellness_title">Terapia Malaquita <br> (Terapia Antiestrés)</h2>
+                                        <p class="area_wellness_card_paraph">(Logra una conexión positiva y armonía
+                                                espiritual)
+                                                Terapia renovadora que permite la relajación muscular, estimula tus
+                                                sentidos y tu equilibrio emocional, libera las tensiones acumuladas con
+                                                el objetivo de descargar el estrés, la ansiedad y tus emociones,
+                                                combinando fórmulas esenciales de lavanda, limón, salvia, sándalo y
+                                                manzanilla. </p>
+                                        <span class="boton_reserva_small">RESERVAR</span>
+
                                 </div>
-                                <div class="area_wellness_card">
-                                        <h2 class="area_wellness_title"></h2>
-                                        <p class="area_wellness_card_paraph"></p>
+                                <div id="fluorita" class="area_wellness_card">
+                                        <h2 class="area_wellness_title">Terapia Flourita <br> (Terapia Reanimante)</h2>
+                                        <p class="area_wellness_card_paraph">(Vive una experiencia reparadora)
+                                                Terapia vivificante y reconfortante que se complementa con las fórmulas
+                                                de aromas esenciales de mandarina, bergamota, pachouli, geranio, lavanda
+                                                que dan equilibrio a tus emociones y es ideal para el cuidado de tu
+                                                piel.
+                                        </p>
+                                        <span class="boton_reserva_small">RESERVAR</span>
+
                                 </div>
-                                <div class="area_wellness_card">
-                                        <h2 class="area_wellness_title"></h2>
-                                        <p class="area_wellness_card_paraph"></p>
+                                <div id="jaspe" class="area_wellness_card">
+                                        <h2 class="area_wellness_title">Terapia Jaspe <br> (Reflexología Podal)</h2>
+                                        <p class="area_wellness_card_paraph">(Estimulante, equilibrio y protección)
+                                                Terapia basada en que distintas partes del cuerpo están reflejadas en la
+                                                planta del pie, al estimular y ejercer presión en diferentes puntos, se
+                                                equilibran órganos y glándulas del cuerpo, con el uso de esencias
+                                                naturales, estimulan la circulación y el sistema inmunológico, mejorando
+                                                el estado de ánimo y la autoestima.</p>
+                                        <span class="boton_reserva_small">RESERVAR</span>
+
                                 </div>
-                                <div class="area_wellness_card">
-                                        <h2 class="area_wellness_title"></h2>
-                                        <p class="area_wellness_card_paraph"></p>
+                                <div id="turqouise" class="area_wellness_card">
+                                        <h2 class="area_wellness_title">Terapia Tourquoise <br> (Drenaje Linfático)</h2>
+                                        <p class="area_wellness_card_paraph">(Intuitivo, purificante, liberante) Terapia que actúa sobre el sistema linfático para purificar y movilizar los desechos y toxinas del cuerpo, mediante técnicas de masoterapia se activará tu metabolismo celular, recuperando la belleza natural de tu piel.</p>
+                                        <span class="boton_reserva_small">RESERVAR</span>
+
                                 </div>
                         </div>
                 </div>

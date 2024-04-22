@@ -21,7 +21,7 @@ function changeTodosColor(){
     document.querySelectorAll('.catalog_menu > li').forEach(e => {
         e.style.backgroundColor = COLOR_DEFAULT;
     });
-    document.querySelectorAll('.area_wellness_cards > div').forEach(i => {
+    document.querySelectorAll('.area_wellness_cards > .area_wellness_card').forEach(i => {
         i.style.display = VISIBILITY_DEFAULT;
     });
 }

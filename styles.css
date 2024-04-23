@@ -19,6 +19,7 @@
   max-width: 992px;
   margin: auto;
 }
+
 /* PROPIEDADES GENERALES */
 
 .top_bar_link {
@@ -95,7 +96,7 @@ nav {
   background-color: rgb(255, 255, 255);
 }
 
-nav li:hover > .sub_menu {
+nav li:hover>.sub_menu {
   display: block;
   z-index: 10;
 }
@@ -110,14 +111,14 @@ main {
 }
 
 .slider {
-  height: 400px;
+  height: 500px;
   margin: 50px auto;
   overflow: hidden;
 }
 
 .slider ul {
   display: flex;
-  width: 300%;
+  width: 400%;
   animation: slide 20s infinite ease-in-out;
 }
 
@@ -255,16 +256,14 @@ footer {
 .card_link {
   text-decoration: none;
   color: #121212;
-  
+
 }
 
 .card_link:hover {
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(192, 199, 194, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(192, 199, 194, 1) 100%);
 }
 
 .card_link:visited {
@@ -304,18 +303,17 @@ footer {
 
 .area_wellness_cards {
   flex-direction: column;
-  width: 700px;
-  max-height: 480px;
+  max-width: 600px;
+  max-height: 400px;
   overflow: hidden;
 }
 
 .area_wellness_card {
   flex-direction: column;
   justify-content: center;
-  height: 480px;
   border: #c0c7c2 2px outset;
-  padding: 80px;
-  gap: 30px;
+  height: 400px;
+  padding: 0 30px;
 }
 
 .area_wellness_card_paraph {
@@ -331,7 +329,7 @@ footer {
   text-align: center;
 }
 
-.catalog_menu > li {
+.catalog_menu>li {
   padding: 20px 10px;
   cursor: pointer;
   background-color: #f7f6f6;
@@ -339,6 +337,13 @@ footer {
   transition: background-color 1s;
 }
 
+
+.area_wellness_hidroterapia{
+  border-top: #c0c7c2 2px solid;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
 
 
 /* .catalog {
@@ -366,13 +371,13 @@ footer {
   background-color: #c0c7c2;
   color: white;
   cursor: pointer;
-  transition: all .5s ease-in; 
-  
+  transition: all .5s ease-in;
+
 
 }
 
 .boton_reserva:hover {
-  background-color:aliceblue;
+  background-color: aliceblue;
   color: #121212;
 }
 
@@ -386,12 +391,12 @@ footer {
   background-color: #c0c7c2;
   color: white;
   cursor: pointer;
-  transition: all .5s ease-in; 
-  
+  transition: all .5s ease-in;
+
 }
 
 .boton_reserva_small:hover {
-  background-color:aliceblue;
+  background-color: aliceblue;
   color: #121212;
 }
 
@@ -408,6 +413,7 @@ footer {
   border: outset 2px #c0c7c2;
   margin: 8px;
 }
+
 .large_card h3 {
   margin: 20px 0;
   text-align: center;
@@ -441,13 +447,13 @@ footer {
   padding: 20px;
 }
 
-.paquetes_cards p{
+.paquetes_cards p {
   text-align: center;
   margin: 8px auto;
   max-width: 200px;
 }
 
-.wellness_area_hero{
+.wellness_area_hero {
   text-align: center;
   padding: 20px 0;
 }
@@ -464,6 +470,7 @@ footer {
   0% {
     margin-left: 0;
   }
+
   20% {
     margin-left: 0;
   }
@@ -471,6 +478,7 @@ footer {
   25% {
     margin-left: -100%;
   }
+
   45% {
     margin-left: -100%;
   }
@@ -478,8 +486,17 @@ footer {
   50% {
     margin-left: -200%;
   }
+
   70% {
     margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  100% {
+    margin-left: -300%;
   }
 }
 
@@ -616,14 +633,14 @@ footer {
     flex-basis: 0px;
   }
 
-  .paquete_title{
+  .paquete_title {
     margin: 0;
     padding: 10px;
     flex-basis: 0px;
 
   }
 
-  .paquete_content{
+  .paquete_content {
     margin: 10px;
   }
 
@@ -631,12 +648,28 @@ footer {
     gap: 40px;
   }
 
-  .area_wellness_card{
-    padding: 40px;
-  }
-  
   .catalog_menu {
-    flex-direction: row;
+    display: flex;
+    gap: 18px;
+  }
+
+  .catalog_item {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0;
+    border: solid 1px rgb(88, 88, 88);
+    
+  }
+
+  .catalog_item span {
+    display: none;
+  }
+
+  .area_wellness_card {
+    padding: 40px;
+    margin: 0;
   }
 
 }

@@ -11,6 +11,10 @@
   display: flex;
 }
 
+.reverser {
+  flex-direction: row-reverse;  
+}
+
 .unstyled_list {
   list-style: none;
 }
@@ -18,6 +22,18 @@
 .content {
   max-width: 992px;
   margin: auto;
+}
+
+.encabezado {
+  text-align: center;
+  padding: 18px;
+}
+
+.banner {
+  text-align: center;
+  padding: 32px 8px;
+  background-color: rgb(114, 136, 120) ;
+  color: white;
 }
 
 /* PROPIEDADES GENERALES */
@@ -140,13 +156,27 @@ main {
   margin: 60px auto;
 }
 
-.index_cuerpo h1 {
-  margin: 20px 0;
+.index_cuerpo p {
+  padding: 8px;
+  text-align: justify;
 }
 
-.index_servicios {
+.servicios_index {
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #ECECEC;
+  padding: 32px;
+  gap: 18px;
+  flex-direction: column;
+}
+
+.tarjeta_servicio_index {
+  justify-content: center;
+  text-align: center;
+}
+
+.tarjeta_servicio_index img {
+  width: 60%;
 }
 
 .services_card {
@@ -667,5 +697,15 @@ footer {
   .area_wellness_card {
     padding: 0px 40px;
     border: 0px;
+  }
+
+  .tarjeta_servicio_index {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .tarjeta_servicio_index img{
+    width: 80%;
   }
 }

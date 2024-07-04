@@ -6,6 +6,12 @@
 }
 
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* PROPIEDADES GENERALES */
 
 .reverse {
@@ -432,6 +438,22 @@ form {
 .campo {
   width: 80%;
   margin: 12px auto;
+  border-radius: 15px;
+  padding: 12px;
+  border: #f7f6f6;
+}
+
+.fecha_hora {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campo_med {
+  width: 40%;
+  margin: 12px 12px;
   border-radius: 15px;
   padding: 12px;
   border: #f7f6f6;

@@ -60,6 +60,7 @@ main {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
 h1,
 h2,
 h3,
@@ -299,6 +300,69 @@ nav li:hover>.sub_menu {
 
 /* ELEMENTOS NOSOTROS */
 
+.hero__banner {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.mision_vision {
+  margin-top: 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.mision_vision div h2 {
+  font-weight: 600;
+}
+
+
+.mision_vision div {
+  display: flex;
+  background-color:#c0c7c2;
+  width: 45%;
+  height: 200px;
+  border-radius: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 0px 18px;
+  text-align: justify;
+}
+
+
+.us__green {
+  background-color: rgb(114, 136, 120);
+  height: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 32px;
+}
+
+.us__green h2 {
+  font-weight: 500;
+  
+} 
+
+.us__green p {
+  font-family: "Source Code Pro";
+  font-size: 1.8rem;
+  font-weight: 300;
+
+}
+
+.paraph__us {
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+  gap: 24px;
+  padding: 32px 18px;
+}
+
 /* FIN SEGMENTO NOSOTROS5 */
 
 
@@ -494,59 +558,6 @@ textarea {
 
 .material-symbols-outlined.card_logo {
   font-size: 60px;
-}
-
-.nosotros_hero {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 60px;
-  flex-wrap: wrap;
-}
-
-.nosotros_card {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  max-width: 300px;
-  height: 300px;
-  border: inset 4px #c0c7c2;
-  padding: 40px;
-  border-radius: 100%;
-}
-
-.nosotros_card h2 {
-  margin: 10px 0;
-}
-
-.nosotros_item {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0;
-}
-
-.valores {
-  text-align: center;
-  padding: 30px 0;
-}
-
-.lista_valores {
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  background-color: #c0c7c2;
-  padding: 30px;
-}
-
-.lista_valores li {
-  margin: 0 30px;
-}
-
-.nosotros_content {
-  text-align: center;
-  padding: 30px 0;
 }
 
 /* AREA WELLNESS  */
@@ -864,11 +875,6 @@ textarea {
   .services_card {
     max-width: 300px;
   }
-
-  .nosotros_item {
-    overflow-x: scroll;
-  }
-
   /* ELEMENTOS RESPONSIVOS DEL INDEX */
 
   .tarjeta_servicio_index {
@@ -932,6 +938,27 @@ textarea {
   .texto_tarjeta_verde ul {
     list-style-position: inside;
   }
+
+/* ELEMENTOS RESPONSIVOS DE NOSOTROS */
+
+.mision_vision {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.mision_vision div{
+  width: 100%;
+}
+
+
+.us__green p{
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+/* FIN RESPONSIVE NOSOTROS */
 
   /* FIN ELEMENTOS RESPONSIVOS DE PAG PAQUETES  */
 

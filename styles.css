@@ -320,7 +320,7 @@ nav li:hover>.sub_menu {
 
 .mision_vision div {
   display: flex;
-  background-color:#c0c7c2;
+  background-color: #c0c7c2;
   width: 45%;
   height: 200px;
   border-radius: 30px;
@@ -345,8 +345,8 @@ nav li:hover>.sub_menu {
 
 .us__green h2 {
   font-weight: 500;
-  
-} 
+
+}
 
 .us__green p {
   font-family: "Source Code Pro";
@@ -403,12 +403,13 @@ nav li:hover>.sub_menu {
   height: 20%;
   padding: 0 18px;
 }
-.servicios_card .boton_servicios{
+
+.servicios_card .boton_servicios {
   margin: 0;
   margin-left: auto;
   margin-right: 30px;
   margin-bottom: 10px;
-  
+
 }
 
 /* FIN ELEMENTOS SERVICIOS */
@@ -675,12 +676,65 @@ textarea {
   width: 80%;
 }
 
+
 #banner_balneo {
   width: 100%;
 }
 
 /* FIN AREA WELLNESS  */
 
+/* INICIO SALUD INTEGRAL */
+
+.salud_integral_hero h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.salud_integral_hero p {
+  text-align: justify;
+}
+
+.salud_integral_hero{
+  padding: 32px;
+  gap: 32px;
+}
+
+.salud_integral_container {
+  gap: 18px;
+}
+
+.tarjeta_salud_integral {
+  background-color: #c0c7c2;
+  height: 400px;
+}
+
+.tarjeta_salud_integral img{
+  width: 70%;
+  object-fit: cover;
+  height: auto;
+}
+
+.texto_tarjetas_integral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 18px;
+  gap: 8px;
+}
+
+.texto_tarjetas_integral h3 {
+  text-align: center;
+  font-weight: 600;
+}
+
+.texto_tarjetas_integral p{
+  text-align: justify;
+}
+
+
+/* FIN SALUD INTEGRAL */
 
 
 /* LINEAS CORRESPONDIENTES AL FOOTER  */
@@ -689,6 +743,7 @@ textarea {
   font-size: 18px;
   background-color: rgb(114, 136, 120);
   justify-content: space-around;
+  align-items: center;
   padding: 18px;
 }
 
@@ -699,8 +754,7 @@ textarea {
 .footer_links a {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  align-items: center;
-  justify-content: start;
+  justify-content: center;
   gap: 18px;
   padding: 8px 0;
 }
@@ -875,6 +929,7 @@ textarea {
   .services_card {
     max-width: 300px;
   }
+
   /* ELEMENTOS RESPONSIVOS DEL INDEX */
 
   .tarjeta_servicio_index {
@@ -939,26 +994,26 @@ textarea {
     list-style-position: inside;
   }
 
-/* ELEMENTOS RESPONSIVOS DE NOSOTROS */
+  /* ELEMENTOS RESPONSIVOS DE NOSOTROS */
 
-.mision_vision {
-  flex-direction: column;
-  padding: 10px;
-}
+  .mision_vision {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-.mision_vision div{
-  width: 100%;
-}
-
-
-.us__green p{
-  font-size: 1rem;
-  text-align: center;
-}
+  .mision_vision div {
+    width: 100%;
+  }
 
 
+  .us__green p {
+    font-size: 1rem;
+    text-align: center;
+  }
 
-/* FIN RESPONSIVE NOSOTROS */
+
+
+  /* FIN RESPONSIVE NOSOTROS */
 
   /* FIN ELEMENTOS RESPONSIVOS DE PAG PAQUETES  */
 
@@ -988,6 +1043,21 @@ textarea {
   }
 
   /* FIN RESPONSIVO AREA WELLNESS  */
+
+  /* INICIO SALUD INTEGRAL */
+
+.tarjeta_salud_integral {
+  width: 100%;
+  flex-direction: column;
+  height: 500px;
+}
+
+.tarjeta_salud_integral img{
+  width: 100%;
+}
+
+
+  /* FIN SALUD INTEGRAL */
 
   /* RESPONSIVO CONTACTO */
 
@@ -1027,7 +1097,8 @@ textarea {
 
   .top_footer {
     font-size: smaller;
-    padding: 32px 0;
+    padding: 32px;
+    gap: 16px;
   }
 
   .footer_links a {

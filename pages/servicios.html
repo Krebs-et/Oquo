@@ -4,7 +4,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Oquo - Wellness Center</title>
+        <title>Oquo - Servicios</title>
 
         <!--    CSS PERSONALIZADO   -->
 
@@ -15,11 +15,14 @@
 
         <!--    FUENTES DE GOOGLE   -->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-                rel="stylesheet">
+                rel="stylesheet" />
 
+
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+                rel="stylesheet">
         <!--    ICONOS DE GOOGLE   -->
 
         <link rel="stylesheet"
@@ -45,7 +48,8 @@
 
         <header>
                 <nav class="flex">
-                        <a href="https://oquowellnesscenter.com"><img src="../images/oquo.jpg" alt="Oquo" width="300px"></a>
+                        <a href="https://oquowellnesscenter.com"><img src="../images/oquo.jpg" alt="Oquo"
+                                        width="300px"></a>
                         <button class="nav_toggle"><span class="material-symbols-outlined">
                                         menu
                                 </span></button>
@@ -140,7 +144,8 @@
 
                                 <li class="nav_item acordeon"><a
                                                 href="https://oquowellnesscenter.com/pages/paquetes.html"
-                                                class="nav_link">PAQUETES </a>                                        <ul class="unstyled_list sub_menu">
+                                                class="nav_link">PAQUETES </a>
+                                        <ul class="unstyled_list sub_menu">
                                                 <li class="sub_nav_item"><a
                                                                 href="https://oquowellnesscenter.com/pages/paquetes/paquete-sensaciones.html"
                                                                 class="sub_nav_link">Paquete sensaciones (3 Días)</a>
@@ -168,98 +173,69 @@
                                 <li class="nav_item"><a
                                                 href="https://oquowellnesscenter.com/pages/reservaciones.html"
                                                 class="nav_link">RESERVACIONES</a></li>
-                                <li class="nav_item"><a
-                                                href="https://oquowellnesscenter.com/pages/paquetes/contacto.html"
+                                <li class="nav_item"><a href="https://oquowellnesscenter.com/pages/contacto.html"
                                                 class="nav_link">CONTACTO</a></li>
                         </ul>
                 </nav>
         </header>
 
-        <main>
+        <body>
+                <main>
+                        <section class="servicios_cards_container flex content">
+                                <div class="servicios_card">
+                                        <img src="../images/servicios/imagenesoquo1.jpg" alt="Area Wellness">
+                                        <h2>Área Wellnes</h2>
+                                        <p class="texto_servicios_tarjeta">Ofrecemos tratamientos innovadores
+                                                llenos de experiencias y emociones
+                                                para una sensación plena.</p>
+                                        <a class="boton_servicios" href="pages/servicios/area-wellness.html">Ver</a>
 
-                <section class="index_servicios content flex">
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                stress_management
-                                        </span><br> ÁREA WELLNESS</h2>
-                                <p>Ofrecemos servicios integrativos de bienestar y tratamientos innovadores llenos de
-                                        experiencias y emociones para una sensación plena. ¡Consiente a tu cuerpo y vive
-                                        un bienestar pleno!
-                                </p>
-                        </a>
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                volunteer_activism
-                                        </span><br>TURISMO DE SALUD</h2>
-                                <p>Tratamientos de medicina estética con tecnología de vanguardia que resaltan y
-                                        renuevan la belleza de nuestros pacientes. Contamos con vigilancia
-                                        médica y asistencia profesional las 24 horas.</p>
-                        </a>
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                bed
-                                        </span><br>HOSPEDAJE WELLNESS</h2>
-                                <p>¡Escápate con nosotros! Convierte tu estancia en una experiencia única y
-                                        revitalizante, encuentra un refugio de tranquilidad y bienestar.</p>
-                        </a>
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo ">
-                                                heart_plus
-                                        </span><br>SALUD INTEGRAL</h2>
-                                <P>Porque la salud se proyecta, realízate una valoración integral para un equilibrio en
-                                        salud física, mental y emocional.</P>
-                        </a>
+                                </div>
+                                <div class="servicios_card">
+                                        <img src="../images/servicios/imagenesoquo2.jpg" alt="">
+                                        <h2>Hospedaje Wellnes</h2>
+
+                                        <p class="texto_servicios_tarjeta">¡Escápate con nosotros! Convierte tu
+                                                estancia en una experiencia única y
+                                                revitalizante, encuentra un refugio de
+                                                tranquilidad y bienestar.</p>
+                                        <a class="boton_servicios" href="pages/servicios/hospedaje.html">Ver</a>
+
+                                </div>
+                                <div class="servicios_card">
+                                        <img src="../images/servicios/imagenesoquo3.jpg" alt="Turismo de Salud">
+                                        <h2>Turismo de Salud</h2>
+
+                                        <p class="texto_servicios_tarjeta">Contamos con tratamientos de
+                                                medicina estética con tecnología de
+                                                vanguardia que resaltan y renuevan
+                                                la belleza de nuestros pacientes.</p>
+                                        <a class="boton_servicios" href="pages/servicios/turismo-de-salud.html">Ver</a>
 
 
-                </section>
-                <section class="index_servicios content flex">
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                local_bar
-                                        </span><br> EVENTOS</h2>
-                                <p>Celebra tu evento donde el bienestar envuelva tu entorno.
-                                </p>
-                        </a>
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                work
-                                        </span><br>WELLNESS EMPRESARIAL</h2>
-                                <p>Bienestar corporativo, mejora el ambiente laboral, productividad y trabajo en
-                                        equipo de tu empresa, así como tu cultura organizacional.Celebra tu
-                                        evento donde el bienestar envuelva tu entorno.</p>
-                        </a>
-                        <a href="" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                health_and_beauty
-                                        </span><br>BOUTIQUE</h2>
-                                <p>¡Lleva tu experiencia a la comodidad de tu hogar!
-                                        Contamos con venta de tratamientos de tecnología de vanguardia, para el
-                                        apoyo de tu cuidado en casa.
-                                </p>
-                        </a>
-                        <a href="https://residenciaenvida.com/" target="_blank" class="services_card flex card_link">
-                                <h2><span class="material-symbols-outlined card_logo">
-                                                heart_plus
-                                        </span><br>RESIDENCIA ALDULTO MAYOR WELLNESS</h2>
-                                <P>Contamos con un espacio para el cuidado de residentes, en un entorno lleno de
-                                        cultura de bienestar acompañado por un exclusivo plan médico integral
-                                        incluido.</P>
-                        </a>
-                </section>
+                                </div>
+                                <div class="servicios_card">
+                                        <img src="../images/servicios/imagenesoquo04.jpg" alt="">
+                                        <h2>Salud Integral</h2>
 
-                <section class="call_to_action flex">
-
-                        <a href=""><img src="../assets/fb.svg" alt=""></a>
-                        <a href=""><img src="../assets/tiktok.svg" alt=""></a>
-                        <a href=""><img src="../assets/wa.svg" alt=""></a>
-                        <a href=""><img src="../assets/ig.svg" alt=""></a>
+                                        <p class="texto_servicios_tarjeta">Porque la salud se proyecta, realízate
+                                                una valoración integral (check up)
+                                                para un equilibrio en salud física y
+                                                emocional.</p>
+                                        <a class="boton_servicios" href="pages/servicios/salud-integral.html">Ver</a>
 
 
-                </section>
+                                </div>
+                                <div class="servicios_card">
+                                        <img src="../images/servicios/imagenesoquo05.jpg" alt="">
+                                        <h2>Eventos Wellnes</h2>
 
-        </main>
+                                        <p class="texto_servicios_tarjeta">Celebra tu evento donde el bienestar
+                                                envuelva tu entorno.</p>
+                                        <a class="boton_servicios" href="pages/servicios/eventos.html">Ver</a>
 
 
+<<<<<<< HEAD
         <footer class="flex">
                 <div class="flex footer_content">
                         <ul class="unstyled_list desktop">
@@ -269,27 +245,60 @@
                                 <li class="footer_item"><a
                                                 href="https://oquowellnesscenter.com/pages/paquetes/contacto.html"
                                                 class="footer_link flex">Contacto</a></li>
-                        </ul>
+=======
+                                </div>
+                                <div class="servicios_card">
+                                        <img src="../images/servicios/imagenesoquo06.jpg" alt="">
+                                        <h2>Wellness Empresarial</h2>
 
-                        <ul class="unstyled_list desktop">
-                                <li class="footer_item"><a
-                                                href="https://oquowellnesscenter.com/pages/paquetes/aviso-privacidad.html"
-                                                class="footer_link flex">Aviso de privacidad</a></li>
-                                <li class="footer_item"><a
-                                                href="https://oquowellnesscenter.com/pages/paquetes/politicas-cancelacion.html"
-                                                class="footer_link flex">Políticas de cancelación</a></li>
-                        </ul>
+                                        <p class="texto_servicios_tarjeta">Bienestar corporativo, mejora el
+                                                ambiente laboral, productividad y
+                                                trabajo en equipo de tu empresa.</p>
+                                        <a class="boton_servicios" href="pages/servicios/empresarial.html">Ver</a>
 
-                        <ul class="unstyled_list">
-                                <li class="footer_item flex" style="align-items: center; gap: 3px;"><span
-                                                class="material-symbols-outlined">
-                                                location_on
-                                        </span>Miguel Hidalgo #30 b, Col. Centro Temixco, Mor.</li>
-                                <li class="footer_item flex" style="justify-content: center; line-height: 60px;">
-                                        HORARIO: 9:00 - 18:00 hrs.</li>
-                                <li class="footer_item" style="text-align: center;">TODOS LOS DERECHOS RESERVADOS</li>
+                                </div>
+                        </section>
+
+
+                </main>
+
+        <footer>
+                <div class="top_footer flex">
+                        <ul class="unstyled_list footer_links">
+                                <li><a href="">Reservaciones</a></li>
+                                <li><a href="">Políticas de Cancelación</a></li>
+                                <li><a href="">Aviso de privacidad</a></li>
+>>>>>>> origin/test
                         </ul>
+                        <ul class="unstyled_list footer_links">
+                                <li id="facebook"><a href="facebookplaceholder"><img src="../assets/fb.svg"
+                                                        alt=""><span>oquo.wellnesscenter</span></a>
+                                </li>
+                                <li id="instagram"><a href="instagramplaceholder"><img src="../assets/ig.svg"
+                                                        alt=""><span>oquowellnesscenter</span></a></li>
+                                <li id="tiktok"><a href="ti     ktokplaceholder"><img src="../assets/tiktok.svg"
+                                                        alt=""><span>oquowellnesscenter</span></a></li>
+                                <li id="whatsapp">
+                                        <a href="whatsappplaceholder"><img src="../assets/wa.svg" alt=""><span>777
+                                                        430 4533</span></a>
+                                </li>
+                        </ul>
+                        <div class="flex column">
+                                <div class="flex"
+                                        style="align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;">
+                                        <img width="150px" src="../images/mega.png" alt="Megasalud">
+                                        <img width="150px" src="../images/turis.png" alt="Turismo de salud">
+                                </div>
+                        </div>
                 </div>
+
+
+
+                <div class="bottom_footer">
+                        <p>Miguel Hidalgo #30, Col. Centro Temixco Morelos / Horario: Martes a Domingo de 10:00
+                                am a 18:00 horas.</p>
+                </div>
+
         </footer>
 </body>
 

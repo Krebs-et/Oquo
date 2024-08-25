@@ -213,7 +213,7 @@ nav {
 }
 
 nav li:hover>.sub_menu {
-  display: block;
+  display: none;
   z-index: 10;
 }
 
@@ -660,7 +660,7 @@ textarea {
 }
 
 #imagen_terapias {
-  width: 30%;
+  width: 45%;
   height: 100%;
 }
 

@@ -727,6 +727,19 @@ textarea {
 }
 
 
+.hospedaje_card_container {
+  justify-content: space-between;
+  padding: 10px;
+  align-items: start;
+}
+
+.card_hospedaje {
+  background-color:#ececec;
+  border-radius: 25px;
+  width: 460px;
+  font-size: medium;
+}
+
 
 /* FIN PÁGINA HOSPEDAJE */
 
@@ -1167,4 +1180,15 @@ textarea {
 
 
   /* FIN ELEMENTOS RESPONSIVOS DEL FOOTER */
+
+  .hospedaje_card_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card_hospedaje {
+    width: 100%;
+  
+  }
 }
+

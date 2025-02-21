@@ -1,9 +1,14 @@
 const navToggle = document.querySelector('.nav_toggle');
 const navMenu = document.querySelector('.nav_menu');
-
+const membershipInfo = document.querySelector('.membershipInfo');
+const closeModal = document.querySelector('.closeModal');
 
 navToggle.addEventListener('click', () => {
     navMenu.classList.toggle("nav_menu_visible");
+})
+
+closeModal.addEventListener('click', () => {
+    membershipInfo.classList.toggle("hide");
 })
 
 // const COLOR_DEFAULT = '#f7f6f6'
